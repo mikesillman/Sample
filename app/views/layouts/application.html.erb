@@ -7,8 +7,41 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+	<div class="container">
+		<div class="logo row-fluid">
+        	 
+        </div>
+		<!--Navbar-->
+		<div class="navbar navbar-inverse">
+    	<div class="navbar-inner">
+        	<a class = "brand" href = '#'>Welcome!</a>
+            <ul class="nav">
+	            <li class="active">
+                	<a href="#" class="home">&nbsp;Home</a></li>
+	            <li class="dropdown">
+                	<a id="drop1" href="#" role="button" class="dropdown-toggle" data-toggle="dropdown">Services &amp; Rates <b class="caret"></b></a>
+                    <ul class="dropdown-menu" role="menu" aria-labelledby="drop1">
+                    	<li role="presentation"><a role="menuitem" tabindex="-1" href="#caretaking">Caretaking</a></li>
+                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#cleaning">Cleaning &amp; Homemaking</a></li>
+                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#injury">Surgery/Injury Recovery</a></li>
+                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#personal">Personal Care</a></li>
+                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#companion">Companionship</a></li>
+                  </ul></li>
+                     
+                <li><a href="#">Resources</a></li>
+                <li><a href="#">About Us</a></li>            </ul>
+           <form class="navbar-form pull-right">
+			 <button type="button" class="btn btn-large btn-inverse mail" onclick="location.href('contact2.html');" value="Redirect">&nbsp;Contact Us</button>
+	  </form>
+  </div>
+</div>
 
-<%= yield %>
 
+		<%= yield %>
+
+		<div class="row-fluid span12 footer">
+    		<p class="foot"> Copyright &copy; 2013 | Shasta Home Services | All rights reserved | <a href="#">Contact Us</a></p>
+  </div>
+	</div>
 </body>
 </html>
